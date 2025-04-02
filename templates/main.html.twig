@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{# ... #}
+
+{% block body %}
+    <body>
+    <div align="center">
+        <h1> Добро пожаловать!<br> Это решение тестового задания по добавлению и получению с сохранением всех "iPhone" </h1>
+    </div>
+    </body>
+    <br>
+        <td>
+            <div align="center">
+                <a class="btn btn-success" href="{{ path('create_product') }}"> Создать</a>
+            </div>
+        </td>
+    <br>
+        <td>
+            <div align="center">
+                <a class="btn btn-success" href="{{ path('get_products') }}"> Посмотреть и загрузить</a>
+            </div>
+        </td>
+{% endblock %}
